@@ -1960,6 +1960,9 @@ body{
  }
 
 @media only screen and (max-width: 600px) {
+    .slider1 .slider1-background {
+        width: unset;
+    }
     .box-slider {
         overflow: hidden;
     }
@@ -2004,5 +2007,14 @@ body{
     .box-content .right .content h3 {
         font-size: 15px;
         margin-top: 0px;
+    }
+    .box-big_clouds .big_clouds1 {
+        bottom: 11px;
+    }
+    .box-big_clouds .big_clouds2 {
+        bottom: -27px;
+    }
+    .box-big_clouds .big_clouds3 {
+        bottom: -31px;
     }
 }
