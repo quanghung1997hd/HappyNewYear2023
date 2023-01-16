@@ -1387,6 +1387,17 @@ body{
     width: 250px;
     height: 250px;
     background-color: #fff;
+    z-index: 100;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.5),
+                0 0 20px rgb(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 50%;
+    transform: scale(0);
+}
+.rhombus-img{
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
     /*border: 4px solid rgb(255, 255, 0);*/
     z-index: 100;
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.5),
@@ -1429,13 +1440,11 @@ body{
         transform: rotate(360deg); 
     }
 }
-
 .rhombus-img img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: 0.5s;
-    z-index: 1;
 }
 .mail{
     position: absolute;
@@ -1716,15 +1725,6 @@ body{
 }
 .box-circle_left .circle_left img{
     width: 100%;
-    animation:circleLeft 20s linear infinite;
-}
-@keyframes circleLeft{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
 }
 .text-content{
     position: absolute;
@@ -1820,14 +1820,14 @@ body{
 .box-content .right .content .title{
     font-family: 'Dancing Script', cursive;
     width: 150px;
-    height: 40px;
+    height: 50px;
     display: flex;
     justify-content: center;
     margin-top: 10px;
     overflow: hidden;
 }
 .box-content .right .content .title h1{
-    margin-top: -40px;
+    margin-top: -45px;
     transition: 0.5s;
 }
 .slider3:hover .title h1{
@@ -1835,7 +1835,7 @@ body{
 }
 @keyframes title{
     0%{
-        margin-top: -40px;
+        margin-top: -45px;
     }
     100%{
         margin-top: 0px;
@@ -1958,3 +1958,51 @@ body{
         transform: scale(1);
     }
  }
+
+@media only screen and (max-width: 600px) {
+    .box-slider {
+        overflow: hidden;
+    }
+    .textHappynewyear {
+        width: 100%;
+    }
+    .textHappynewyear .box-span span::after {
+        font-size: 32px !important;
+    }
+     .circle span {
+        width: 385px;
+        height: 385px;
+    }
+    .box-lion_dance .lion_dance1 {
+        top: 71%;
+        right: 47%;
+    }
+    .box-lion_dance .lion_dance2 {
+        top: 74%;
+        left: 51%;
+    }
+    .box-content .right .content .title {
+        height: 70px;
+        overflow: unset;
+    }
+    .box-content .right .content .title h1
+    {
+        margin-top: 0px;
+    }
+    .box-content .right .content p {
+        opacity: 1;
+    }
+    .content .fixedContent {
+        margin-top: 0px;
+    }
+    .box-content .right .content p {
+        padding: 0px 15px 0px 15px;
+    }
+    .content .fixedContent {
+        margin-left: 20%;
+    }
+    .box-content .right .content h3 {
+        font-size: 15px;
+        margin-top: 0px;
+    }
+}

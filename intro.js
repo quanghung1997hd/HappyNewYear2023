@@ -52,3 +52,26 @@ buttonSong.onclick= function(){
         mySong.play()
     }
 }
+
+//----content
+function updateContent() {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  if(urlParams.get('to'))
+  {
+    document.getElementById("to").innerHTML = urlParams.get('to')
+  }
+  if(urlParams.get('name'))
+  {
+    document.getElementById("name").innerHTML = urlParams.get('name')
+  }
+  if (urlParams.get('from'))
+  {
+    document.getElementById("from").innerHTML = urlParams.get('from')
+  }
+  if (urlParams.get('content'))
+  {
+    document.getElementById("content").innerHTML = urlParams.get('content')
+  }
+}
+updateContent()
