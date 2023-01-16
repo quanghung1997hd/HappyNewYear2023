@@ -73,5 +73,9 @@ function updateContent() {
   {
     document.getElementById("content").innerHTML = urlParams.get('content')
   }
+  if (urlParams.get('image'))
+  {
+    document.getElementById("img-infor").src = urlParams.get('image')
+  }
 }
 updateContent()
