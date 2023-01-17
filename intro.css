@@ -3228,6 +3228,12 @@ body{
  }
 
 @media only screen and (max-width: 600px) {
+    .box-button .button {
+        width: 190px;
+    }
+    .box-button .button button {
+        width: 100%;
+    }
     .slider1 .slider1-background {
         width: unset;
     }
