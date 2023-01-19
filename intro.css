@@ -1992,6 +1992,10 @@ body{
     {
         margin-top: 0px;
     }
+    .box-content .right .content .title h1 span
+    {
+        font-size: 28px;
+    }
     .box-content .right .content p {
         opacity: 1;
     }
